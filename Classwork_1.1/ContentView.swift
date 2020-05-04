@@ -9,10 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var thekr = "بسم الله الرحمن الرحيم"
     var body: some View {
-        Text("Hello!")
+        ZStack {
+            Image("BACKGROUND").resizable()
+
+            VStack {
+                Image("Header").resizable().aspectRatio(contentMode: .fit)
+                Spacer()
+                Image("Mosque").resizable().aspectRatio(contentMode: .fit)
+            }
+            
+            Text(thekr)
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .multilineTextAlignment(.center)
+                .padding()
+            .onTapGesture {
+                self.thekr = athkar.randomElement()!
+            }
+        
+        }
+    .edgesIgnoringSafeArea(.all)
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

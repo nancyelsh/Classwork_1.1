@@ -13,6 +13,7 @@
 		14D52BA3245F6773005D31C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D52BA2245F6773005D31C0 /* Assets.xcassets */; };
 		14D52BA6245F6773005D31C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D52BA5245F6773005D31C0 /* Preview Assets.xcassets */; };
 		14D52BA9245F6773005D31C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D52BA7245F6773005D31C0 /* LaunchScreen.storyboard */; };
+		14D52BB1245F7FBD005D31C0 /* Athkar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D52BB0245F7FBD005D31C0 /* Athkar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		14D52BA5245F6773005D31C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14D52BA8245F6773005D31C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D52BAA245F6773005D31C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D52BB0245F7FBD005D31C0 /* Athkar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athkar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				14D52B9C245F6770005D31C0 /* AppDelegate.swift */,
 				14D52B9E245F6770005D31C0 /* SceneDelegate.swift */,
 				14D52BA0245F6770005D31C0 /* ContentView.swift */,
+				14D52BB0245F7FBD005D31C0 /* Athkar.swift */,
 				14D52BA2245F6773005D31C0 /* Assets.xcassets */,
 				14D52BA7245F6773005D31C0 /* LaunchScreen.storyboard */,
 				14D52BAA245F6773005D31C0 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				14D52B9D245F6770005D31C0 /* AppDelegate.swift in Sources */,
 				14D52B9F245F6770005D31C0 /* SceneDelegate.swift in Sources */,
+				14D52BB1245F7FBD005D31C0 /* Athkar.swift in Sources */,
 				14D52BA1245F6770005D31C0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
