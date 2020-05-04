@@ -9,28 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var thekr = "بسم الله الرحمن الرحيم"
+    @State var pageNumber = ""
     var body: some View {
         ZStack {
-            Image("BACKGROUND").resizable()
-
+            BG()
             VStack {
-                Image("Header").resizable().aspectRatio(contentMode: .fit)
-                Spacer()
-                Image("Mosque").resizable().aspectRatio(contentMode: .fit)
+                Text("Page \(pageNumber)").font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                TextField("رقم الصفحة", text: $pageNumber).keyboardType(.numberPad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .multilineTextAlignment(.trailing)
+                    .frame(height: 90)
+                
             }
-            
-            Text(thekr)
-            .font(.largeTitle)
-            .foregroundColor(.white)
-            .multilineTextAlignment(.center)
-                .padding()
-            .onTapGesture {
-                self.thekr = athkar.randomElement()!
-            }
-        
         }
-    .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -39,5 +33,20 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct BG: View {
+    var body: some View {
+        ZStack {
+            Image("BACKGROUND").resizable()
+            
+            VStack {
+                Image("Header").resizable().aspectRatio(contentMode: .fit)
+                Spacer()
+                Image("Mosque").resizable().aspectRatio(contentMode: .fit)
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
